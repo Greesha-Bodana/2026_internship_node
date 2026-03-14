@@ -4,4 +4,8 @@ router.get("/products",ProductController.getAllProducts)
 router.get("/product/:id",ProductController.getProductById)
 router.post("/product",ProductController.addProduct)
 router.delete("/product/:id",ProductController.deleteProduct)
+router.put("/product/:id",ProductController.updateProduct)
+router.put("/addcolor/:id",ProductController.addColor)
+router.put("/removecolor/:id",ProductController.removeColor)
+router.get("/searchprod",ProductController.searchProduct)
 module.exports = router
